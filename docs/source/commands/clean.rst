@@ -1,10 +1,9 @@
-``conda clean``
-*****************
+dias_semana = ["lunes", "martes", "miércoles", "jueves", "viernes"]
 
-.. argparse::
-   :module: conda.cli.conda_argparse
-   :func: generate_parser
-   :prog: conda
-   :path: clean
-   :nodefault:
-   :nodefaultconst:
+print("domingo" in dias_semana)     # ¿Está "domingo" en la lista?
+print("miércoles" in dias_semana)   # ¿Está "miércoles" en la lista?
+print("jueves" in dias_semana)      # ¿Está "jueves" en la lista?
+
+
+
+
