@@ -1,10 +1,20 @@
-``conda clean``
-*****************
+# Número de participantes
+num_participantes = 3
 
-.. argparse::
-   :module: conda.cli.conda_argparse
-   :func: generate_parser
-   :prog: conda
-   :path: clean
-   :nodefault:
-   :nodefaultconst:
+# Lista para almacenar las respuestas
+respuestas = []
+
+print(f"Vamos a registrar las respuestas de {num_participantes} participantes.")
+
+for i in range(num_participantes):
+    nombre = input(f"Nombre del participante {i+1}: ").strip()
+    while not nombre:
+        nombre = input("Por favor, ingresa un nombre válido: ").strip()
+        
+    respuesta = input(f"{nombre}, ingresa tu respuesta para el reto: ").strip()
+    while not respuesta:
+        respuesta = input("Por favor, ingresa una respuesta válida: ").strip()
+        
+    respuestas.append((nombre, respuesta))
+
+print("\nResumen de respuestas
