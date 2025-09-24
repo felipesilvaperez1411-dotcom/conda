@@ -1,10 +1,10 @@
-``conda clean``
-*****************
+# Crear una lista vacía
+compras = []
 
-.. argparse::
-   :module: conda.cli.conda_argparse
-   :func: generate_parser
-   :prog: conda
-   :path: clean
-   :nodefault:
-   :nodefaultconst:
+# Agregar elementos a la lista
+compras.append("manzana")
+compras.append("tomate")
+compras.append("leche")
+
+# Mostrar la lista completa
+print(compras)
